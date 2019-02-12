@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Exercise</h1>
+    Add animation to the CSS so that each of the 3 squares rotates with a different speed. The animation should only be active when the "loader" div has class "loading".
+    For testing, the button toggles the loader class between "loading" and "".
+    <div id="loader">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+    <input type="button" id="button" value="load">
+
+
+    <script type="text/javascript">
+    var el = document.getElementById("button");
+    var addClassLoading = document.getElementById("loader");
+
+    el.addEventListener("click", clickedBox, false);
+
+    function clickedBox() {
+        if (addClassLoading.className === "loading") {
+    		addClassLoading.className = "";
+    	} else {
+    		addClassLoading.className = "loading";
+    	}
+    }
+
+    </script>
+</body>
+</html>

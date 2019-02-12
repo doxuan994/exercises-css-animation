@@ -1,0 +1,21 @@
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: 4s;
+}
+.moveRight {
+    transform: translate(300px, 0px);
+}
+.moveDown {
+    transform: translate(300px, 300px);
+}
+.moveLeft {
+    transform: translate(0px, 300px);
+}
+.moveUp {
+    transform: translate(0px, 0px);
+}
