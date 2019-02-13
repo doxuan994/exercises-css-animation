@@ -39,7 +39,6 @@ html, body {
 
 .card:hover {
 	/* outline: 3px solid red; */
-
 }
 
 .deck:hover .card:nth-child(1) {
